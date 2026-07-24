@@ -9,9 +9,23 @@
 
 <h1>Image Compressor</h1>
 
-<form>
-    <input type="file">
-    <button type="submit">Compress</button>
+<form
+    action="/compress"
+    method="post"
+    enctype="multipart/form-data"
+>
+
+    <input
+        type="file"
+        name="file"
+        accept=".jpg,.jpeg,.png,.webp"
+        required
+    >
+
+    <button type="submit">
+        Compress Image
+    </button>
+
 </form>
 
 </body>
